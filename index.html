@@ -19,6 +19,9 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- data-aos-animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -75,16 +78,16 @@
     <section class="welcome-area">
         <div class="welcome-slides owl-carousel">
             <!-- Single Slide -->
-            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/core-img/favicon\ -\ Copia.png);">
+            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/core-img/fundo-home1.png);">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <!-- Welcome Text -->
                         <div class="col-12 col-lg-8 col-xl-6">
                             <div class="welcome-text">
-                                <h2 data-animation="bounceInDown" data-delay="900ms">S.A.M<br>Bem vindo</h2>
+                                <h2 data-animation="bounceInDown" data-delay="900ms">Surf<br> Shop</h2>
                                 <p data-animation="bounceInDown" data-delay="500ms">Shaper Designer</p>
                                 <div class="hero-btn-group" data-animation="bounceInDown" data-delay="100ms">
-                                    <a href="./about.html" class="btn alime-btn mb-3 mb-sm-0 mr-4">Um pouco sobre mim</a>
+                                    <a href="./about.html" class="btn alime-btn mb-3 mb-sm-0 mr-4">Um pouco sobre S.A.M</a>
 
                                 </div>
                             </div>
@@ -100,11 +103,11 @@
                         <!-- Welcome Text -->
                         <div class="col-12 col-lg-8 col-xl-6">
                             <div class="welcome-text">
-                                <h2 data-animation="bounceInUp" data-delay="100ms">Hello <br>I'm Alime</h2>
+                                <h2 data-animation="bounceInUp" data-delay="100ms">Shaper <br> Designer</h2>
                                 <p data-animation="bounceInUp" data-delay="500ms">Conheça nossos modelos, testados e aprovados por atletas.</p>
                                 <div class="hero-btn-group" data-animation="bounceInUp" data-delay="900ms">
                                     <a href="#modelos" class="btn alime-btn mb-3 mb-sm-0 mr-4">Modelos</a>
-                                    <a class="hero-mail-contact" href="mailto:hello.alime@gmail.com">email@gmail.com</a>
+
                                 </div>
                             </div>
                         </div>
@@ -114,7 +117,7 @@
         </div>
     </section>
     <!-- Welcome Area End -->
-    <div class="about-us-area section-padding-80-0 clearfix" id="modelos">
+    <div class="about-us-area section-padding-80-0 clearfix" id="modelos" data-aos="fade-up">
         <div class="container">
             <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
                 <h2>Mc-Pro</h2>
@@ -133,7 +136,7 @@
         </div>
     </div>
 
-    <div class="about-us-area section-padding-80-0 clearfix">
+    <div class="about-us-area section-padding-80-0 clearfix" data-aos="fade-up">
         <div class="container">
             <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
                 <h2>TwinFish</h2>
@@ -249,7 +252,8 @@
                         </div>
                         <!-- Footer Logo -->
                         <div class="footer-logo">
-                            <a href="#"><img src="./img/core-img/favicon2.png" alt=""></a>
+                            <a href="./index.html"><img src="./img/core-img/icon-rodape.png" alt=""></a>
+
                         </div>
                         <!-- Social Info -->
                         <div class="social-info">
@@ -276,6 +280,11 @@
     <script src="js/alime.bundle.js"></script>
     <!-- Active -->
     <script src="js/default-assets/active.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

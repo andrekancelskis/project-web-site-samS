@@ -19,6 +19,10 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- data-aos-animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -91,8 +95,8 @@
     </section>
     <!-- Breadcrumb Area End -->
 
-    <!-- Welcome Area End -->
-    <div class="about-us-area section-padding-80-0 clearfix">
+    <!-- MODELO Area START -->
+    <div class="about-us-area section-padding-80-0 clearfix" data-aos="fade-up" data-aos-duration="3000">
         <div class="container">
             <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
                 <h2>Mc-Pro</h2>
@@ -106,12 +110,23 @@
 
                     </div>
                 </div>
+                <div class="col-12 col-lg-6">
+                    <div class="about-video-area mb-80 wow fadeInUp" data-wow-delay="100ms">
+                        <img src="img/models/twinFish2.png" alt="">
 
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center wow fadeInUp" data-wow-delay="800ms">
+                    <a data-toggle="modal" data-target="#mc-pro" class="btn alime-btn btn-2 mt-15">+ Detalhes</a>
+                    <!-- modalsss -->
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="about-us-area section-padding-80-0 clearfix">
+    <div class="about-us-area section-padding-80-0 clearfix" data-aos="fade-up" data-aos-duration="3000">
         <div class="container">
             <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
                 <h2>TwinFish</h2>
@@ -123,26 +138,123 @@
 
                     <div class="about-video-area mb-80 wow fadeInUp" data-wow-delay="100ms">
                         <img src="img/models/twinFish.jpg" alt="">
+                    </div>
 
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="about-video-area mb-80 wow fadeInUp" data-wow-delay="100ms">
+                        <img src="img/models/twinFish2.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center wow fadeInUp" data-wow-delay="800ms">
+                    <a data-toggle="modal" data-target="#twinFish" class="btn alime-btn btn-2 mt-15">+ Detalhes</a>
+                    <!-- modalsss -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODELO Area END -->
+
+    <style>
+        .fa-shopping-cart {
+            margin-top: 20px;
+            font-size: 40px;
+            color: grey;
+            text-align: center;
+            margin-left: 160px;
+        }
+        
+        .fa-times {
+            font-size: 25px;
+            color: #797777;
+        }
+    </style>
+
+    <!-- Modal 1-->
+    <div class="portfolio-modal modal fade" id="mc-pro" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <i class="fas fa-times mr-1" data-dismiss="modal"></i>
+                                <h2 class="text-uppercase">Mc-Pro</h2>
+                                <p class="item-intro text-muted">Marcos Correa PRO-MODEL.</p>
+                                <img class="img-fluid d-block mx-auto" src="img/models/mc-pro3.png" alt="" />
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
+                                    maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>Material: PU</li>
+                                    <li>Volume: 36 L</li>
+                                    <li>Tamanho: 5'11 - 20 1/2 - 2 7/8</li>
+                                    <li>Tipo de copinho: FCS2</li>
+                                    <li>Quilhas: Bi-quilhas</li>
+                                    <li>Acabamento: Fosco</li>
+                                </ul>
+                                <a href="#"> <i class="fas fa-shopping-cart"></i> Comprar</a>
+                                <!-- link pagamento 1-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 2-->
+    <div class="portfolio-modal modal fade" id="twinFish" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <i class="fas fa-times mr-1" data-dismiss="modal"></i>
+                                <h2 class="text-uppercase">TwinFish</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="img/models/twinFish3.png" alt="" />
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
+                                    maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>Material: PU</li>
+                                    <li>Volume: 36 L</li>
+                                    <li>Tamanho: 5'11 - 20 1/2 - 2 7/8</li>
+                                    <li>Tipo de copinho: FCS2</li>
+                                    <li>Quilhas: Bi-quilhas</li>
+                                    <li>Acabamento: Fosco</li>
+                                </ul>
+                                <a href="#"> <i class="fas fa-shopping-cart"></i> Comprar</a>
+                                <!-- link pagamento 1-->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+
+
     <!-- Gallery Area Start -->
-    <div class="alime-portfolio-area section-padding-80 clearfix">
+    <div class="alime-portfolio-area section-padding-80 clearfix" data-aos="fade-up" data-aos-duration="3000">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
                     <!-- Projects Menu -->
                     <div class="alime-projects-menu wow fadeInUp" data-wow-delay="100ms">
                         <div class="portfolio-menu text-center">
-                            <button class="btn active" data-filter="*">All</button>
-                            <button class="btn" data-filter=".human">Human</button>
-                            <button class="btn" data-filter=".nature">Nature</button>
-                            <button class="btn" data-filter=".country">Country</button>
-                            <button class="btn" data-filter=".video">Video</button>
+                            <button class="btn active" data-filter="*">Todas</button>
+                            <button class="btn" data-filter=".human">LongBoards</button>
+                            <button class="btn" data-filter=".nature">Performance</button>
+                            <button class="btn" data-filter=".country">Clássicas</button>
+
                         </div>
                     </div>
                 </div>
@@ -152,49 +264,9 @@
                 <!-- Single Gallery Item -->
                 <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp" data-wow-delay="100ms">
                     <div class="single-portfolio-content">
-                        <img src="img/bg-img/39.jpg" alt="">
+                        <img src="img/bg/1.png" alt="">
                         <div class="hover-content">
-                            <a href="img/bg-img/39.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video human mb-30 wow fadeInUp" data-wow-delay="300ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/bg-img/40.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/bg-img/40.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp" data-wow-delay="500ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/bg-img/41.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/bg-img/41.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp" data-wow-delay="700ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/bg-img/42.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/bg-img/42.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/bg-img/43.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/bg-img/43.jpg" class="portfolio-img">+</a>
+                            <a href="img/bg/1.png" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
@@ -202,19 +274,19 @@
                 <!-- Single Gallery Item -->
                 <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video country mb-30 wow fadeInUp" data-wow-delay="300ms">
                     <div class="single-portfolio-content">
-                        <img src="img/bg-img/44.jpg" alt="">
+                        <img src="img/bg/2.png" alt="">
                         <div class="hover-content">
-                            <a href="img/bg-img/44.jpg" class="portfolio-img">+</a>
+                            <a href="img/bg/2.png" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp" data-wow-delay="500ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp" data-wow-delay="500ms">
                     <div class="single-portfolio-content">
-                        <img src="img/bg-img/45.jpg" alt="">
+                        <img src="img/bg/3.png" alt="">
                         <div class="hover-content">
-                            <a href="img/bg-img/45.jpg" class="portfolio-img">+</a>
+                            <a href="img/bg/3.png" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
@@ -222,29 +294,69 @@
                 <!-- Single Gallery Item -->
                 <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp" data-wow-delay="700ms">
                     <div class="single-portfolio-content">
-                        <img src="img/bg-img/46.jpg" alt="">
+                        <img src="img/bg/4.png" alt="">
                         <div class="hover-content">
-                            <a href="img/bg-img/46.jpg" class="portfolio-img">+</a>
+                            <a href="img/bg/4.png" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video country mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp" data-wow-delay="100ms">
                     <div class="single-portfolio-content">
-                        <img src="img/bg-img/47.jpg" alt="">
+                        <img src="img/bg/5.png" alt="">
                         <div class="hover-content">
-                            <a href="img/bg-img/47.jpg" class="portfolio-img">+</a>
+                            <a href="img/bg/5.png" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp" data-wow-delay="300ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video nature mb-30 wow fadeInUp" data-wow-delay="300ms">
                     <div class="single-portfolio-content">
-                        <img src="img/bg-img/48.jpg" alt="">
+                        <img src="img/bg/6.png" alt="">
                         <div class="hover-content">
-                            <a href="img/bg-img/48.jpg" class="portfolio-img">+</a>
+                            <a href="img/bg/6.png" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp" data-wow-delay="500ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg/7.png" alt="">
+                        <div class="hover-content">
+                            <a href="img/bg/7.png" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp" data-wow-delay="700ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg/8.png" alt="">
+                        <div class="hover-content">
+                            <a href="img/bg/8.png" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video nature mb-30 wow fadeInUp" data-wow-delay="100ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg/9.png" alt="">
+                        <div class="hover-content">
+                            <a href="img/bg/9.png" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Gallery Item -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp" data-wow-delay="300ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/bg/10.png" alt="">
+                        <div class="hover-content">
+                            <a href="img/bg/10.png" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
@@ -252,19 +364,19 @@
                 <!-- Single Gallery Item -->
                 <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp" data-wow-delay="500ms">
                     <div class="single-portfolio-content">
-                        <img src="img/bg-img/49.jpg" alt="">
+                        <img src="img/bg/11.png" alt="">
                         <div class="hover-content">
-                            <a href="img/bg-img/49.jpg" class="portfolio-img">+</a>
+                            <a href="img/bg/11.png" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp" data-wow-delay="700ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp" data-wow-delay="700ms">
                     <div class="single-portfolio-content">
-                        <img src="img/bg-img/50.jpg" alt="">
+                        <img src="img/bg/12.png" alt="">
                         <div class="hover-content">
-                            <a href="img/bg-img/50.jpg" class="portfolio-img">+</a>
+                            <a href="img/bg/12.png" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
@@ -272,7 +384,7 @@
 
             <div class="row">
                 <div class="col-12 text-center wow fadeInUp" data-wow-delay="800ms">
-                    <a href="#" class="btn alime-btn btn-2 mt-15">View More</a>
+                    <a href="https://www.instagram.com/samsurfboards/" class="btn alime-btn btn-2 mt-15" target="_blank">Veja Mais</a>
                 </div>
             </div>
         </div>
@@ -364,7 +476,7 @@
                         </div>
                         <!-- Footer Logo -->
                         <div class="footer-logo">
-                            <a href="#"><img src="./img/core-img/favicon2.png" alt=""></a>
+                            <a href="./index.html"><img src="./img/core-img/icon-rodape.png" alt=""></a>
                         </div>
                         <!-- Social Info -->
                         <div class="social-info">
@@ -391,6 +503,11 @@
     <script src="js/alime.bundle.js"></script>
     <!-- Active -->
     <script src="js/default-assets/active.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
