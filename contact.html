@@ -94,14 +94,56 @@
     </section>
     <!-- Breadcrumb Area End -->
 
-    <!-- Contact Area Start -->
+    <!-- Make sure you don't change the form action-->
     <div class="contact-area section-padding-80-50">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6">
+                <div class="col-md-5 col-lg-3 col-sm-6">
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <!-- Replace with accesKey sent to your email -->
+                        <input type="hidden" name="accessKey" value="5b559142-ceac-4a53-9b7b-ce222d15451a">
+
+                        <label for="assunto">Nome:</label><br>
+                        <input type="text" name="name" placeholder="nome"><br>
+
+                        <label for="assunto">Modelo:</label><br>
+                        <select type="text" name="subject" id="assunto">
+                            <option value="Mc-pro">Mc-pro</option>
+                            <option value="TwinFish">TwinFish</option>
+                            <option value="Prancha Sob-medida">Prancha Sob-medida</option>
+                            <option value="Manutenção">Manutenção</option>
+                            <option value="Dúvida geral">Dúvida geral</option>
+                        </select><br>
+
+                        <label for="assunto">E-mail:</label><br>
+                        <input type="text" name="email" placeholder="e-mail"><br>
+
+                        <label for="assunto">Celular:</label><br>
+                        <input type="text" name="phone" placeholder="(xx)99999-9999"><br>
+
+                        <label for="tamanho">Tamanho:</label><br>
+                        <input type="text" name="$tamanho" placeholder="5´9 - 2 - 3/8"><br>
+
+                        <label for="volume">Volume:</label><br>
+                        <input type="text" name="$volume" placeholder="29L"><br>
+
+                        <label for="assunto">Deixe sua mensagem:</label><br>
+                        <textarea name="message" placeholder="mensagem"></textarea><br>
+                        <!-- Specify @ as reply to value if you want it to be customers email 
+                        <input type="hidden" name="replyTo" value="albertomarques_shaper@hotmail.com">
+                        Optional -->
+                        <!--MUDAR LINK DE REDIRECIONAMENTO -->
+                        <input type="hidden" name="redirectTo" value="http://localhost:5500/contact.html">
+                        <!-- If we receive data in this field submission will be ignored -->
+                        <input type="text" name="honeypot" style="display: none;">
+                        <!-- Optional -->
+                        <input class="btn alime-btn btn-2 mt-30 wow fadeInUp" type="submit" value="Enviar" data-wow-delay="500ms" />
+                    </form>
+                </div>
+                <div class="col-md-7 col-lg-4 col-sm-6">
                     <h2 class="contact-title mb-30">Conheça nossa <br>Oficina</h2>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3">
                     <!-- Contact Info -->
                     <div class="contact-info mb-30">
                         <p>Email</p>
@@ -113,7 +155,7 @@
 
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-2">
                     <!-- Contact Info -->
                     <div class="contact-info mb-30">
                         <p>Oficina</p>
@@ -127,6 +169,15 @@
                     </div>
 
                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Area Start -->
+    <div class="contact-area section-padding-80-50">
+        <div class="container">
+            <div class="row">
+
+
             </div>
         </div>
     </div>
@@ -222,7 +273,7 @@
                                 Copyright &copy;
                                 <script>
                                     document.write(new Date().getFullYear());
-                                </script> | S.A.M SurfBoards
+                                </script> | S.A.M SurfBoards <br><a href="https://andrekancelskis.github.io/" target="_blank">Desenvolvido por André Kancelskis</a>
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             </p>
                         </div>
