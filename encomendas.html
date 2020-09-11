@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>S.A.M SurfBoards</title>
+
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/core-img/favicon.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- data-aos-animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Preloader -->
+
+
+
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between" id="alimeNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="./index.html"><img src="./img/core-img/favicon2.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+                            <!-- Menu Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul id="nav">
+                                    <li><a href="./index.html">Home</a></li>
+                                    <li><a href="./OShaper.html">O Shaper</a></li>
+                                    <li><a href="./gallery.html">Modelos</a></li>
+                                    <li><a href="./Atletas.html">Atletas</a></li>
+                                    <li><a href="./Afabrica.html">A fábrica</a></li>
+                                    <li class="active"><a href="./encomendas.html">Encomendas</a></li>
+                                    <li><a href="./contact.html">Contato</a></li>
+                                </ul>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+    <!-- Breadcrumb Area Start -->
+    <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url(img/core-img/fundo-contato.png);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcrumb-content text-center">
+                        <h2 class="page-title">Encomendas</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a href="index.html"><i class="icon_house_alt"></i> Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Encomendas</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Area End -->
+
+    <!-- Make sure you don't change the form action-->
+    <div class="contact-area section-padding-80-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-lg-3 col-sm-6">
+                    <h2>Encomendas</h2>
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <!-- Replace with accesKey sent to your email -->
+                        <input type="hidden" name="accessKey" value="5b559142-ceac-4a53-9b7b-ce222d15451a">
+
+                        <label for="assunto">Nome:</label><br>
+                        <input type="text" name="name" placeholder="nome"><br>
+
+                        <label for="assunto">Modelo:</label><br>
+                        <select type="text" name="subject" id="assunto">
+                            <option value="Mc-pro">Mc-pro</option>
+                            <option value="TwinFish">TwinFish</option>
+                            <option value="Prancha Sob-medida">Prancha Sob-medida</option>
+                        </select><br>
+
+                        <label for="assunto">E-mail:</label><br>
+                        <input type="text" name="email" placeholder="e-mail"><br>
+
+                        <label for="assunto">Celular:</label><br>
+                        <input type="text" name="phone" placeholder="(xx)99999-9999"><br>
+
+                        <label for="tamanho">Tamanho:</label><br>
+                        <input type="text" name="$tamanho" placeholder="5´9 - 2 - 3/8"><br>
+
+                        <label for="volume">Volume:</label><br>
+                        <input type="text" name="$volume" placeholder="29L"><br>
+
+                        <label for="assunto">Deixe sua mensagem:</label><br>
+                        <textarea name="message" placeholder="mensagem"></textarea><br>
+                        <!-- Specify @ as reply to value if you want it to be customers email 
+                        <input type="hidden" name="replyTo" value="albertomarques_shaper@hotmail.com">
+                        Optional -->
+                        <!--MUDAR LINK DE REDIRECIONAMENTO -->
+                        <input type="hidden" name="redirectTo" value="http://localhost:5500/contact.html">
+                        <!-- If we receive data in this field submission will be ignored -->
+                        <input type="text" name="honeypot" style="display: none;">
+                        <!-- Optional -->
+                        <input class="btn alime-btn btn-2 mt-30 wow fadeInUp" type="submit" value="Enviar" data-wow-delay="500ms" />
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Instagram Feed Area -->
+    <div class="instragram-feed-area owl-carousel">
+        <!-- Single Instagram Item -->
+        <div class="single-instagram-item">
+            <img src="img/bg-img/11.png" alt="">
+            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                <a href="https://www.instagram.com/samsurfboards/" target="_blank">
+                    <i class="ti-instagram" aria-hidden="true"></i>
+                    <span>samsurfboards</span>
+                </a>
+            </div>
+        </div>
+        <!-- Single Instagram Item -->
+        <div class="single-instagram-item">
+            <img src="img/bg-img/12.png" alt="">
+            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                <a href="https://www.instagram.com/samsurfboards/" target="_blank">
+                    <i class="ti-instagram" aria-hidden="true"></i>
+                    <span>samsurfboards</span>
+                </a>
+            </div>
+        </div>
+        <!-- Single Instagram Item -->
+        <div class="single-instagram-item">
+            <img src="img/bg-img/13.png" alt="">
+            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                <a href="https://www.instagram.com/samsurfboards/" target="_blank">
+                    <i class="ti-instagram" aria-hidden="true"></i>
+                    <span>samsurfboards</span>
+                </a>
+            </div>
+        </div>
+        <!-- Single Instagram Item -->
+        <div class="single-instagram-item">
+            <img src="img/bg-img/14.png" alt="">
+            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                <a href="https://www.instagram.com/samsurfboards/" target="_blank">
+                    <i class="ti-instagram" aria-hidden="true"></i>
+                    <span>samsurfboards</span>
+                </a>
+            </div>
+        </div>
+        <!-- Single Instagram Item -->
+        <div class="single-instagram-item">
+            <img src="img/bg-img/15.png" alt="">
+            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                <a href="https://www.instagram.com/samsurfboards/" target="_blank">
+                    <i class="ti-instagram" aria-hidden="true"></i>
+                    <span>samsurfboards</span>
+                </a>
+            </div>
+        </div>
+        <!-- Single Instagram Item -->
+        <div class="single-instagram-item">
+            <img src="img/bg-img/16.png" alt="">
+            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                <a href="https://www.instagram.com/samsurfboards/" target="_blank">
+                    <i class="ti-instagram" aria-hidden="true"></i>
+                    <span>samsurfboards</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- Follow Area End -->
+
+    <!-- Footer Area Start -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-content d-flex align-items-center justify-content-between">
+                        <!-- Copywrite Text -->
+                        <div class="copywrite-text">
+                            <p>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script> | S.A.M SurfBoards <br><a href="https://andrekancelskis.github.io/" target="_blank">Desenvolvido por André Kancelskis</a>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
+                        </div>
+                        <!-- Footer Logo -->
+                        <div class="footer-logo">
+                            <a href="./index.html"><img src="./img/core-img/icon-rodape.png" alt=""></a>
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="https://www.facebook.com/shaperalbertomarques/" target="_blank"><i class="ti-facebook" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/samsurfboards/" target="_blank"><i class="ti-instagram" aria-hidden="true"></i></a>
+                            <a href="https://www.youtube.com/user/betinhopinturas" target="_blank"><i class="ti-youtube" aria-hidden="true"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=5513988650251" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!-- **** All JS Files ***** -->
+    <!-- jQuery 2.2.4 -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="js/alime.bundle.js"></script>
+    <!-- Active -->
+    <script src="js/default-assets/active.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
